@@ -1,0 +1,50 @@
+import { Head, Notes, themes } from 'mdx-deck'
+import { Card, CardHolder } from './components'
+import myTheme from './theme'
+
+export const theme =  {
+  ...themes.prism,
+  ...myTheme,
+  };
+
+<Head>
+  <title>Code with Brian</title>
+</Head>
+
+# Code with Brian
+## Branding Doc
+
+---
+
+## Colors Now
+
+<CardHolder colors={[
+  "#663399",
+  "#FF69B4",
+  "#008BF8",
+  "#09BC8A",
+  "#F4D35E",
+  "#FF6500",
+  "#BD1E1E",
+  "#E7E7EF",
+  "#17171f",
+  "#FAF9FC",
+  "#0A090C"
+]} />
+
+---
+
+# Code with Brian
+## Code with Brian
+### Code with Brian
+#### Code with Brian
+##### Code with Brian
+###### Code with Brian
+here is some code below
+
+`const c = ({a, b}) => a === b; // this is a comment`
+
+```jsx
+// this is a comment
+const c = ({a, b}) => a === b;
+```
